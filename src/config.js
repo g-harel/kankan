@@ -24,6 +24,14 @@ export default {
       }
     },
     {
+      name: 'test',
+      limit: 0,
+      requirements: {
+        'internal aproval': 'boolean',
+        'client aproval': 'boolean'
+      }
+    },
+    {
       name: 'approved',
       limit: 0,
       requirements: {
@@ -35,16 +43,16 @@ export default {
   task_types: [
     {
       name: 'bug',
-      color: 'red'
+      color: 'rgb(255,100,100)'
     }, 
     {
       name: 'feature',
-      color: 'limegreen'
+      color: 'rgb(100,255,100)'
     }, 
     {
       name: 'process',
-      color: 'blue'
+      color: 'rgb(100,100,255)'
     }
   ],
-  lanes: ['team1', 'team2']
+  lanes: ['team1', 'team2', 'team3']
 }

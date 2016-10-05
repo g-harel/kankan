@@ -6,7 +6,7 @@ export default {
       lane: 'team1'
     },
     {
-      step: 'backlog',
+      step: 'approved',
       type: 'process',
       lane: 'team1'
     },
@@ -16,12 +16,12 @@ export default {
       lane: 'team1'
     },
     {
-      step: 'backlog',
+      step: 'greenlit',
       type: 'bug',
       lane: 'team2'
     },
     {
-      step: 'backlog',
+      step: 'greenlit',
       type: 'bug',
       lane: 'team2'
     },
@@ -29,6 +29,11 @@ export default {
       step: 'backlog',
       type: 'feature',
       lane: 'team2'
+    },
+    {
+      step: 'test',
+      type: 'bug',
+      lane: 'team1'
     },
   ]
 }
