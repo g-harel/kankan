@@ -7,3 +7,73 @@ body {
 html, body, #root {
   height: 100%
 }
+
+#container {
+    font-family: Lato, sans-serif;
+    height: 100%;
+}
+
+#header {
+    box-shadow: 3px 3px rgba(0,0,0,0.05);
+    text-shadow: 3px 3px rgba(0,0,0,0.03);
+    background-color: #fff;
+    padding: 8px 80px;
+    font-weight: 900;
+    border-top: 0px;
+    font-size: 20px;
+    height: 24px;
+}
+
+#board {
+    border-collapse: collapse;
+    margin: 16px auto 0;
+    border-spacing: 0px;
+    min-width: 80%;
+}
+
+.board_headers {
+  height: 32px;
+  font-size: 18px;
+  text-align: left;
+  padding: 0 20px;
+  font-weight: 900;
+  text-shadow: 3px 3px rgba(0,0,0,0.03);
+}
+
+.lane {
+  border-top: 3px solid #ff6e00;
+}
+
+.label_container {
+  padding: 0 16px 0 6px;
+  vertical-align: top;
+  color: #fff;
+  font-weight: 900;
+}
+
+.label {
+  box-shadow: 3px 3px rgba(0,0,0,0.05);
+  padding: 4px 6px 6px;
+  border-radius: 8px 0 8px 8px;
+  background-color: #ff6e00;
+  position: relative;
+  left: -12px;
+  top: -3px;
+}
+
+.step {
+  background-color: #fff;
+  vertical-align: top;
+  min-height: 480px;
+  min-width: 200px;
+  padding: 16px 8px 16px 11px;
+}
+
+.task {
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.05);
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 4px 0;
+  min-height: 140px;
+  padding: 8px;
+}
