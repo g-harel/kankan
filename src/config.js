@@ -43,16 +43,16 @@ export default {
   task_types: [
     {
       name: 'bug',
-      color: 'rgb(255,100,100)'
+      color: 'rgba(255,100,100,0.4)'
     }, 
     {
       name: 'feature',
-      color: 'rgb(100,255,100)'
+      color: 'rgba(100,255,100,0.4)'
     }, 
     {
       name: 'process',
-      color: 'rgb(100,100,255)'
+      color: 'rgba(100,100,255,0.4)'
     }
   ],
-  lanes: ['team1', 'team2', 'team3']
+  lanes: ['team1', 'team2']
 }

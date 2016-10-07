@@ -26,30 +26,32 @@ class App extends Component {
         return (
             <div id='container'>
                 <div id='header'>kankan</div>
-                <table id='board'>
-                    <tbody>
-                        <tr>
-                            <th></th>
-                            {config.steps.map((step, i) => (
-                                <th className='board_headers' key={i}>
-                                    {step.name}
-                                </th>
-                            )) }
-                        </tr>
-                        {(config.lanes).map((lane, i) => (
-                            <tr className='lane' key={i}>
-                                <td className='label_container'>
-                                    <div className='label'>
-                                        {lane}
-                                    </div>
-                                </td>
-                                {config.steps.map((step, i) =>
-                                    <Step tasks={db.tasks.filter(val => (val.step === step.name && val.lane === lane)) } key={i}/>
-                                ) }
+                <div id='scrollbox'>
+                    <table id='board'>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                {config.steps.map((step, i) => (
+                                    <th className='board_headers' key={i}>
+                                        {step.name}
+                                    </th>
+                                ))}
                             </tr>
-                        )) }
-                    </tbody>
-                </table>
+                            {(config.lanes).map((lane, i) => (
+                                <tr className='lane' key={i}>
+                                    <td className='label_container'>
+                                        <div className='label'>
+                                            {lane}
+                                        </div>
+                                    </td>
+                                    {config.steps.map((step, i, steps) =>
+                                        <Step tasks={db.tasks.filter(val => (val.step === step.name && val.lane === lane))} wide={100/steps.length+'%'} key={i}/>
+                                    )}
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         );
     }
