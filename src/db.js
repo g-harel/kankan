@@ -54,7 +54,7 @@ export default {
       type: 'feature',
       lane: 'team1',
       title: 'title',
-      desc: 'description lorem ipsum bla bla, more text to test the look of it ayyy description lorem ipsum bla bla'
+      desc: 'description lorem ipsum bla bla, more text to test the look of it ayyy description lorem ipsum bla bla description lorem ipsum bla bla, more text to test the look of it ayyy description lorem ipsum bla bla'
     },
   ]
 }

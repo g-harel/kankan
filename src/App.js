@@ -7,9 +7,15 @@ let requirements = `
   steps
     step limit (wip limit)
     requirements per step
+        user restrictions
   tasks
     task types
+    numbered
+    assignees
+    watchers
+    comments
   swim lanes
+    lane collapse
 `
 
 let qol = `

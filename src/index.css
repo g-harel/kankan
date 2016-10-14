@@ -75,6 +75,11 @@ html, body, #root {
   padding: 6px 8px 6px 8px;
 }
 
+.step > a {
+  text-decoration: none;
+  color: #000;
+}
+
 .task {
   box-shadow: 3px 3px 0 rgba(0,0,0,0.05);
   border: 1px solid #ccc;
