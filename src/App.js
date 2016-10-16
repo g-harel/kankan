@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Step from './components/Step';
 import config from './config';
+import { Link } from 'react-router';
 import db from './db.js';
 
 let requirements = `
@@ -31,7 +32,8 @@ class App extends Component {
     render() {
         return (
             <div id='container'>
-                <div id='header'>kankan</div>
+                {this.props.children}
+                <div id='header'><Link to='/'>kankan</Link></div>
                 <div id='scrollbox'>
                     <table id='board'>
                         <tbody>
