@@ -7,7 +7,7 @@ class Edit extends Component {
         let task = db.tasks.find((task) => task.id === Number(this.props.params.id));
         return (
             <div id='focus'>
-                <Link to='/' id='overlay'></Link>
+                <Link to='/' id='focus_overlay'></Link>
                 <div id='focus_content'>
                     <span>{task.title}</span>
                     <span>{task.desc}</span>

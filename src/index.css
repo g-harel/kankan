@@ -71,7 +71,6 @@ a {
   padding: 1px 6px 6px;
   border-radius: 0 0 8px 8px;
   background-color: #444;
-  position: relative;
 }
 
 .step {
@@ -98,26 +97,29 @@ a {
   box-shadow: 2px 2px 0 rgba(0,0,0,0.05);
 }
 
-#overlay {
+#focus {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+#focus_overlay {
   background-color: rgba(0,0,0,0.7);
-  z-index: 2;
+  z-index: 1;
   position: fixed;
   width: 100%;
   height: 100%;
 }
 
-#focus {
-  position: fixed;
-  height: 0px;
-  width: 100%;
-}
-
 #focus_content {
-  position: fixed;
   background-color: #ffffff;
-  z-index: 2;
-  width: 400px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 60%;
+  min-width: 800px;
   min-height: 40%;
-  margin: 20% auto;
-  width: 50%;
+  display: block;
+  z-index: 2;
 }
