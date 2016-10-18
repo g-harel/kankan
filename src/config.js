@@ -40,19 +40,16 @@ export default {
       }
     },
   ],
-  task_types: [
-    {
-      name: 'bug',
+  task_types: {
+    bug: {
       color: 'rgba(255,100,100,0.4)'
-    }, 
-    {
-      name: 'feature',
+    },
+    feature: {
       color: 'rgba(100,255,100,0.4)'
-    }, 
-    {
-      name: 'process',
+    },
+    process: {
       color: 'rgba(100,100,255,0.4)'
     }
-  ],
+  },
   lanes: ['team1', 'team2']
 }

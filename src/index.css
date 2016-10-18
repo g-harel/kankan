@@ -122,4 +122,6 @@ a {
   min-height: 40%;
   display: block;
   z-index: 2;
+  padding: 20px;
+  border-radius: 2px;
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Step from './components/Step';
 import config from './config';
 import { Link } from 'react-router';
-import db from './db.js';
+import State from './State.js';
 
 let requirements = `
   steps
@@ -53,7 +53,7 @@ class App extends Component {
                                         </div>
                                     </td>
                                     {config.steps.map((step, i, steps) =>
-                                        <Step tasks={db.tasks.filter(val => (val.step === step.name && val.lane === lane))} wide={100/steps.length+'%'} key={i}/>
+                                        <Step tasks={State.tasks.filter(val => (val.step === step.name && val.lane === lane))} wide={100/steps.length+'%'} key={i}/>
                                     )}
                                 </tr>
                             ))}
