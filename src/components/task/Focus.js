@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import State from '../../State.js';
+import { get, set } from '../../State.js';
 import config from '../../config.js';
 
 class Edit extends Component {
     render() {
-        let task = State.tasks.find((task) => task.id === Number(this.props.params.id));
+        let task = get('id', Number(this.props.params.id))[0];
         return (
             <div id='focus'>
                 <Link to='/' id='focus_overlay'></Link>
