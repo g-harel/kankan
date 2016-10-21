@@ -53,7 +53,7 @@ class App extends Component {
                                         </div>
                                     </td>
                                     {config.steps.map((step, i, steps) =>
-                                        <Step tasks={get('step', step.name).filter(val => (val.lane === lane))} wide={100/steps.length+'%'} key={i}/>
+                                        <Step tasks={get.intersect([['step', step.name], ['lane', lane]])} width={100/steps.length+'%'} key={i}/>
                                     )}
                                 </tr>
                             ))}
