@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Step from './components/Step';
 import config from './config';
 import { Link } from 'react-router';
-import { get, set } from './State.js';
+import { get/*, set*/ } from './State.js';
 
 let requirements = `
   steps

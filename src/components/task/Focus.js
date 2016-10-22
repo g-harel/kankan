@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { get, set } from '../../State.js';
+import { get/*, set*/ } from '../../State.js';
 import config from '../../config.js';
+import Form from '../Form.js';
 
 class Edit extends Component {
     render() {
@@ -13,10 +14,8 @@ class Edit extends Component {
                     <span className='task_title' style={{backgroundColor: config.task_types[task.type].color}}>
                         {task.title}
                     </span><br/><br/>
-                    <span>{task.desc}</span>
-                    <span>{task.lane}</span>
-                    <span>{task.step}</span>
-                    <span>{task.type}</span>
+                    <Form {...task}></Form>
+
                 </div>
             </div>
         );

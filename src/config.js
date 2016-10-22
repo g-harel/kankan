@@ -3,41 +3,68 @@ export default {
     {
       name: 'backlog',
       limit: 0,
-      requirements: {
-        title: 'string',
-        descrition: 'string'
-      }
+      requirements: [
+        {
+          name: 'title',
+          type: 'text'
+        },
+        {
+          name: 'description',
+          type: 'textarea'
+        }
+      ]
     },
     {
       name: 'greenlit',
       limit: 6,
-      requirements: {
-        client: 'string',
-        participants: 'string'
-      }
+      requirements: [
+        {
+          name: 'client',
+          type: 'text'
+        },
+        {
+          name: 'participants',
+          type: 'text'
+        }
+      ]
     },
     {
       name: 'production',
       limit: 4,
-      requirements: {
-        'specs provided': 'boolean'
-      }
+      requirements: [
+        {
+          name: 'specs provided',
+          type: 'boolean'
+        }
+      ]
     },
     {
       name: 'test',
       limit: 0,
-      requirements: {
-        'internal aproval': 'boolean',
-        'client aproval': 'boolean'
-      }
+      requirements: [
+        {
+          name: 'internal aproval',
+          type: 'boolean'
+        },
+        {
+          name: 'client aproval',
+          type: 'boolean'
+        }
+      ]
     },
     {
       name: 'approved',
       limit: 0,
-      requirements: {
-        'internal aproval': 'boolean',
-        'client aproval': 'boolean'
-      }
+      requirements: [
+        {
+          name: 'internal aproval',
+          type: 'boolean'
+        },
+        {
+          name: 'client aproval',
+          type: 'boolean'
+        }
+      ]
     },
   ],
   task_types: {
